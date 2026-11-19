@@ -1,0 +1,105 @@
+{
+  "_ayuda": "Planes que muestra la página, en este orden. Para ocultar uno, poner \"visible\": false. Datos tomados de prevencionsalud.com.ar/planes (A2 CP: explicación de Flor).",
+
+  "planes": [
+    {
+      "id": "A2",
+      "nombre": "A2",
+      "etiqueta": "Recomendado",
+      "visible": true,
+      "resumen": "Cartilla abierta con reintegros. Habitación individual. Programas preventivos. Cobertura nacional e internacional.",
+      "destacados": [
+        "Consultas, laboratorio y estudios sin tope",
+        "Sin copagos en consultas ni estudios",
+        "Reintegro si te atendés fuera de cartilla",
+        "Habitación individual en internación",
+        "40% en medicamentos ambulatorios",
+        "Asistencia al viajero"
+      ],
+      "detalle": [
+        { "tema": "Kinesiología y fonoaudiología", "cobertura": "30 sesiones de cada una" },
+        { "tema": "Psicología y psiquiatría", "cobertura": "Hasta 30 sesiones, con copago" },
+        { "tema": "Medicamentos crónicos", "cobertura": "70%" },
+        { "tema": "Embarazo y bebé hasta el año", "cobertura": "100%" },
+        { "tema": "Óptica", "cobertura": "Lentes, armazón y cristales por reintegro" },
+        { "tema": "Ortodoncia", "cobertura": "100% en prestadores seleccionados hasta los 30 años, con 12 meses de antigüedad" },
+        { "tema": "Seguro de continuidad", "cobertura": "3 meses para el grupo familiar" }
+      ],
+      "link_oficial": "https://www.prevencionsalud.com.ar/planes/a2"
+    },
+    {
+      "id": "A2CP",
+      "nombre": "A2 CP",
+      "etiqueta": "Cuota más baja",
+      "visible": true,
+      "resumen": "Cuota mensual más baja con copago fijo por consulta, estudio o práctica. Cartilla cerrada.",
+      "destacados": [
+        "Cuota mensual más baja que el A2",
+        "Copago fijo por cada consulta, estudio o práctica",
+        "Atención con prestadores de la cartilla",
+        "Ideal si usás poco la cobertura"
+      ],
+      "detalle": [],
+      "_ayuda_detalle": "La web oficial no publica el A2 CP. Si Flor pasa el detalle, se carga acá.",
+      "link_oficial": ""
+    },
+    {
+      "id": "A4",
+      "nombre": "A4",
+      "etiqueta": "Premium",
+      "visible": true,
+      "resumen": "Prestadores de mayor prestigio a nivel nacional, reintegros superadores y más cobertura en odontología, óptica y kinesiología.",
+      "destacados": [
+        "Cartilla con prestadores de mayor prestigio",
+        "Reintegros superadores",
+        "40 sesiones de kinesiología y de fonoaudiología",
+        "Cirugía refractiva al 100%",
+        "Ecografía 3D/4D en el embarazo",
+        "Habitación individual en internación"
+      ],
+      "detalle": [
+        { "tema": "Consultas, laboratorio y estudios", "cobertura": "Sin tope" },
+        { "tema": "Ortodoncia", "cobertura": "100% en prestadores seleccionados hasta los 35 años, con 6 meses de antigüedad" },
+        { "tema": "Medicamentos ambulatorios", "cobertura": "40%" },
+        { "tema": "Medicamentos crónicos", "cobertura": "70%" },
+        { "tema": "Embarazo y bebé hasta el año", "cobertura": "100%" },
+        { "tema": "Seguro de continuidad", "cobertura": "6 meses para el grupo familiar" }
+      ],
+      "link_oficial": "https://www.prevencionsalud.com.ar/planes/a4"
+    },
+    {
+      "id": "A5",
+      "nombre": "A5",
+      "etiqueta": "Premium plus",
+      "visible": true,
+      "resumen": "Habitación VIP en internación. Chequeo médico anual. Cobertura nacional e internacional.",
+      "destacados": [
+        "Habitación suite (VIP) en internación",
+        "Chequeo médico anual",
+        "Kinesiología y fonoaudiología sin tope",
+        "50% en medicamentos ambulatorios",
+        "Ortodoncia sin límite de edad",
+        "Homeopatía, acupuntura y quiropraxia por reintegro"
+      ],
+      "detalle": [
+        { "tema": "Consultas, laboratorio y estudios", "cobertura": "Sin tope" },
+        { "tema": "Cirugía refractiva", "cobertura": "100% por única vez, con 6 meses de antigüedad" },
+        { "tema": "Prótesis e implantes importados", "cobertura": "100%" },
+        { "tema": "Embarazo y bebé hasta el año", "cobertura": "100%" },
+        { "tema": "Emergencias", "cobertura": "Código Rojo en todo el país" },
+        { "tema": "Seguro de continuidad", "cobertura": "12 meses para el grupo familiar" }
+      ],
+      "link_oficial": "https://www.prevencionsalud.com.ar/planes/a5"
+    }
+  ],
+
+  "comparacion_a2_vs_a2cp": {
+    "titulo": "¿A2 o A2 CP?",
+    "filas": [
+      { "tema": "Cuota mensual", "A2": "Más alta", "A2CP": "Más baja" },
+      { "tema": "Copagos", "A2": "No pagás copagos en consultas ni estudios", "A2CP": "Pagás un copago fijo por cada consulta, estudio o práctica" },
+      { "tema": "Cartilla", "A2": "Abierta: si te atendés fuera de cartilla, tenés reintegro", "A2CP": "Cerrada: te atendés con los prestadores de la cartilla" }
+    ],
+    "consejo": "Si vas seguido al médico o hacés tratamientos (kinesiología, fonoaudiología, nutrición, alergia), suele convenir el A2. Si lo usás poco, el A2 CP te deja una cuota más baja."
+  }
+}

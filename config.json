@@ -1,0 +1,35 @@
+{
+  "_ayuda": "Datos que pueden cambiar. Se editan acá sin tocar el diseño. Después de editar, volver a publicar.",
+
+  "asesora": {
+    "nombre": "Florencia Blanco",
+    "cargo": "Asesora comercial",
+    "foto": "assets/flor.webp",
+    "instagram": "flor_prevencionsalud"
+  },
+
+  "whatsapp": {
+    "numero": "5492984573632",
+    "_ayuda_numero": "Formato: 54 9 + característica + número, sin 0, sin 15, sin espacios ni guiones.",
+    "mensaje_hablar_directo": "Hola Flor! Prefiero hablar directo con vos para cotizar mi plan."
+  },
+
+  "sueldo_bruto_tope": 4769631,
+  "_ayuda_tope": "Tope de sueldo bruto sujeto a aportes que acepta el cotizador de Prevención. Actualizar cuando cambie.",
+
+  "monotributo_categorias": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"],
+
+  "provincias": [
+    "Neuquén", "Río Negro",
+    "Buenos Aires", "Ciudad Autónoma de Buenos Aires", "Catamarca", "Chaco", "Chubut",
+    "Córdoba", "Corrientes", "Entre Ríos", "Formosa", "Jujuy", "La Pampa", "La Rioja",
+    "Mendoza", "Misiones", "Salta", "San Juan", "San Luis", "Santa Cruz", "Santa Fe",
+    "Santiago del Estero", "Tierra del Fuego", "Tucumán"
+  ],
+
+  "limites": {
+    "planes_max_a_elegir": 2,
+    "hijos_max": 10,
+    "familiares_a_cargo_max": 3
+  }
+}

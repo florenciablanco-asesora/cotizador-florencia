@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cotizá tu plan de salud | Florencia Blanco · Prevención Salud</title>
+  <meta name="description" content="Completá tus datos en 2 minutos y recibí tu cotización de Prevención Salud por WhatsApp. Asesoramiento personalizado.">
+  <meta name="theme-color" content="#3A2030">
+
+  <!-- Vista previa al compartir el link (WhatsApp, Instagram, Facebook) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cotizá tu plan en 2 minutos | Florencia Blanco · Prevención Salud">
+  <meta property="og:description" content="Completá tus datos y recibí tu cotización por WhatsApp. Cobertura en todo el país.">
+  <meta property="og:image" content="[COMPLETAR: URL completa del sitio]/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="[COMPLETAR: URL completa del sitio]/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <img src="assets/logo-prevencion.svg" alt="Prevención Salud" class="logo" width="150" height="31">
+  <span class="topbar-name" data-asesora-nombre>Florencia Blanco</span>
+</header>
+
+<main>
+  <!-- PORTADA -->
+  <section class="hero">
+    <img src="assets/flor.webp" alt="Florencia Blanco, asesora de Prevención Salud" class="avatar" width="112" height="112">
+    <p class="eyebrow">COBERTURA EN TODO EL PAÍS</p>
+    <h1>Cotizá tu plan en <span class="hl">2&nbsp;minutos</span></h1>
+    <p class="hero-text">Soy Florencia, asesora comercial de Prevención Salud. Completás tus datos, me los enviás por WhatsApp y te paso tu cotización.</p>
+    <a href="#cotizar" class="btn btn-primary btn-lg" data-ir-form>Cotizar mi plan</a>
+    <p class="hero-note">Sin compromiso · Sin costo · Te respondo por WhatsApp</p>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section class="section">
+    <h2 class="title">Así de simple</h2>
+    <ol class="steps">
+      <li><span class="step-n">1</span><div><strong>Completás tus datos.</strong> Para quién es el plan, cómo trabajás y quiénes se suman.</div></li>
+      <li><span class="step-n">2</span><div><strong>Los enviás por WhatsApp.</strong> Se arma el mensaje solo, vos tocás enviar.</div></li>
+      <li><span class="step-n">3</span><div><strong>Te paso tu cotización.</strong> Con todo lo que necesito, sin idas y vueltas.</div></li>
+    </ol>
+  </section>
+
+  <!-- PLANES -->
+  <section class="band">
+    <h2 class="title">Planes</h2>
+    <p class="subtitle">Elegí el que mejor se ajusta a vos y a tu familia.</p>
+  </section>
+  <section class="section">
+    <div id="planes" class="plans"><p class="muted">Cargando planes…</p></div>
+
+    <div id="comparacion" class="compare" hidden></div>
+
+    <p class="fine">Las coberturas son informativas y pueden cambiar. Las condiciones finales son las del contrato de Prevención Salud.</p>
+  </section>
+
+  <!-- FORMULARIO -->
+  <section id="cotizar" class="band band-form">
+    <h2 class="title">Cotizá tu plan</h2>
+    <p class="subtitle">4 pasos cortos. Tus datos van directo a mi WhatsApp.</p>
+  </section>
+
+  <section class="section">
+    <form id="form" class="form" novalidate>
+      <div class="progress" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <p class="step-count" id="stepCount">Paso 1 de 4</p>
+
+      <!-- PASO 1 -->
+      <fieldset class="fstep" data-step="1">
+        <legend class="fstep-title">Contame sobre vos</legend>
+        <p class="fstep-sub">Con tu DNI cargo tus datos en el sistema de Prevención.</p>
+
+        <label class="field">
+          <span class="label">Nombre y apellido</span>
+          <input type="text" name="nombre" autocomplete="name" placeholder="Juan Pérez">
+          <span class="error" aria-live="polite" data-error-for="nombre"></span>
+        </label>
+        <label class="field">
+          <span class="label">DNI</span>
+          <input type="text" name="dni" inputmode="numeric" autocomplete="off" placeholder="30123456" maxlength="10">
+          <span class="error" aria-live="polite" data-error-for="dni"></span>
+        </label>
+        <label class="field">
+          <span class="label">Provincia</span>
+          <select name="provincia"><option value="">Seleccioná tu provincia</option></select>
+          <span class="error" aria-live="polite" data-error-for="provincia"></span>
+        </label>
+        <label class="field">
+          <span class="label">Localidad</span>
+          <input type="text" name="localidad" autocomplete="address-level2" placeholder="Cipolletti">
+          <span class="error" aria-live="polite" data-error-for="localidad"></span>
+        </label>
+        <label class="field">
+          <span class="label">Email <em>(opcional)</em></span>
+          <input type="email" name="email" autocomplete="email" inputmode="email" placeholder="juan@gmail.com">
+          <span class="error" aria-live="polite" data-error-for="email"></span>
+        </label>
+      </fieldset>
+
+      <!-- PASO 2 -->
+      <fieldset class="fstep" data-step="2" hidden>
+        <legend class="fstep-title">¿Cómo trabajás?</legend>
+        <p class="fstep-sub">Con esto sé si podés usar tus aportes para pagar el plan.</p>
+
+        <div class="options" role="radiogroup">
+          <label class="opt"><input type="radio" name="trabajo" value="dependencia"><span>Relación de dependencia</span></label>
+          <div class="sub" data-show-when="trabajo=dependencia" hidden>
+            <label class="field">
+              <span class="label">Sueldo bruto mensual</span>
+              <div class="money"><span>$</span><input type="text" name="sueldo" inputmode="numeric" placeholder="1.500.000"></div>
+              <span class="help">Lo ves en tu recibo de sueldo, antes de los descuentos.</span>
+              <span class="error" aria-live="polite" data-error-for="sueldo"></span>
+            </label>
+          </div>
+
+          <label class="opt"><input type="radio" name="trabajo" value="monotributo"><span>Monotributo</span></label>
+          <div class="sub" data-show-when="trabajo=monotributo" hidden>
+            <label class="field">
+              <span class="label">Categoría</span>
+              <select name="categoria" data-categorias><option value="">Seleccioná (A a K)</option></select>
+              <span class="help">La ves en tu credencial de monotributo.</span>
+              <span class="error" aria-live="polite" data-error-for="categoria"></span>
+            </label>
+            <p class="notice">El monotributo social no está incluido.</p>
+          </div>
+
+          <label class="opt"><input type="radio" name="trabajo" value="ri"><span>Responsable inscripto</span></label>
+          <label class="opt"><input type="radio" name="trabajo" value="particular"><span>Sin aportes / prefiero pagarlo de forma particular</span></label>
+        </div>
+        <span class="error" aria-live="polite" data-error-for="trabajo"></span>
+      </fieldset>
+
+      <!-- PASO 3 -->
+      <fieldset class="fstep" data-step="3" hidden>
+        <legend class="fstep-title">¿Quiénes se suman?</legend>
+        <p class="fstep-sub">Si es solo para vos, dejá todo en "No" y seguí.</p>
+
+        <p class="label">¿Sumás a tu pareja?</p>
+        <div class="seg" role="radiogroup">
+          <label><input type="radio" name="pareja" value="no" checked><span>No</span></label>
+          <label><input type="radio" name="pareja" value="si"><span>Sí</span></label>
+        </div>
+
+        <div class="sub" data-show-when="pareja=si" hidden>
+          <label class="field">
+            <span class="label">Nombre y apellido de tu pareja</span>
+            <input type="text" name="parejaNombre" placeholder="Ana Gómez">
+            <span class="error" aria-live="polite" data-error-for="parejaNombre"></span>
+          </label>
+          <label class="field">
+            <span class="label">DNI de tu pareja</span>
+            <input type="text" name="parejaDni" inputmode="numeric" placeholder="31987654" maxlength="10">
+            <span class="error" aria-live="polite" data-error-for="parejaDni"></span>
+          </label>
+
+          <div data-solo-obligatorio>
+            <p class="label">¿Tu pareja también suma sus aportes?</p>
+            <div class="seg" role="radiogroup">
+              <label><input type="radio" name="parejaAportes" value="no" checked><span>No</span></label>
+              <label><input type="radio" name="parejaAportes" value="si"><span>Sí</span></label>
+            </div>
+
+            <div class="sub" data-show-when="parejaAportes=si" hidden>
+              <p class="label">¿Cómo trabaja?</p>
+              <div class="options" role="radiogroup">
+                <label class="opt"><input type="radio" name="parejaTrabajo" value="dependencia"><span>Relación de dependencia</span></label>
+                <div class="sub" data-show-when="parejaTrabajo=dependencia" hidden>
+                  <label class="field">
+                    <span class="label">Sueldo bruto mensual de tu pareja</span>
+                    <div class="money"><span>$</span><input type="text" name="parejaSueldo" inputmode="numeric" placeholder="1.200.000"></div>
+                    <span class="error" aria-live="polite" data-error-for="parejaSueldo"></span>
+                  </label>
+                </div>
+                <label class="opt"><input type="radio" name="parejaTrabajo" value="monotributo"><span>Monotributo</span></label>
+                <div class="sub" data-show-when="parejaTrabajo=monotributo" hidden>
+                  <label class="field">
+                    <span class="label">Categoría</span>
+                    <select name="parejaCategoria" data-categorias><option value="">Seleccioná (A a K)</option></select>
+                    <span class="error" aria-live="polite" data-error-for="parejaCategoria"></span>
+                  </label>
+                  <p class="notice">El monotributo social no está incluido.</p>
+                </div>
+              </div>
+              <span class="error" aria-live="polite" data-error-for="parejaTrabajo"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="counter-row">
+          <div><p class="label">Hijos</p><p class="help">Hasta 25 años inclusive.</p></div>
+          <div class="counter" data-counter="hijos">
+            <button type="button" data-dec aria-label="Restar un hijo">−</button>
+            <output name="hijos">0</output>
+            <button type="button" data-inc aria-label="Sumar un hijo">+</button>
+          </div>
+        </div>
+        <p class="notice" data-show-when="hijos>0" hidden>Los hijos de 21 a 25 años tienen que presentar certificado de alumno regular terciario o universitario.</p>
+
+        <div class="counter-row" data-solo-obligatorio>
+          <div><p class="label">Familiares a cargo</p><p class="help">Padres, abuelos o nietos a tu cargo. Hasta 3.</p></div>
+          <div class="counter" data-counter="familiares">
+            <button type="button" data-dec aria-label="Restar un familiar">−</button>
+            <output name="familiares">0</output>
+            <button type="button" data-inc aria-label="Sumar un familiar">+</button>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- PASO 4 -->
+      <fieldset class="fstep" data-step="4" hidden>
+        <legend class="fstep-title">Casi listo</legend>
+
+        <p class="label">¿Qué plan te interesa? <em>Podés elegir hasta 2.</em></p>
+        <div id="planOptions" class="chips"></div>
+        <span class="error" aria-live="polite" data-error-for="planes"></span>
+
+        <p class="label">¿Te recomendó alguien?</p>
+        <div class="seg" role="radiogroup">
+          <label><input type="radio" name="referido" value="no" checked><span>No</span></label>
+          <label><input type="radio" name="referido" value="si"><span>Sí</span></label>
+        </div>
+        <div class="sub" data-show-when="referido=si" hidden>
+          <label class="field">
+            <span class="label">Nombre y apellido de quien te recomendó</span>
+            <input type="text" name="refNombre" placeholder="Laura Díaz">
+            <span class="error" aria-live="polite" data-error-for="refNombre"></span>
+          </label>
+          <label class="field">
+            <span class="label">Celular de quien te recomendó <em>(opcional)</em></span>
+            <input type="tel" name="refCel" inputmode="tel" placeholder="299 412-3456">
+            <span class="help">Así le asigno su beneficio.</span>
+          </label>
+        </div>
+
+        <div class="summary">
+          <p class="summary-title">Revisá tus datos</p>
+          <div id="summary"></div>
+        </div>
+      </fieldset>
+
+      <!-- LISTO -->
+      <div class="fstep done" data-step="5" hidden>
+        <p class="done-icon" aria-hidden="true">✓</p>
+        <h3 class="fstep-title">¡Listo!</h3>
+        <p>Si WhatsApp no se abrió, tocá el botón de nuevo. Te respondo con tu cotización lo antes posible.</p>
+        <a class="btn btn-primary btn-lg btn-wa" id="sendAgain" href="#" target="_blank" rel="noopener">Abrir WhatsApp otra vez</a>
+        <button type="button" class="btn btn-ghost" id="restart">Cargar otra cotización</button>
+      </div>
+
+      <div class="nav" id="nav">
+        <button type="button" class="btn btn-outline" id="prev">Anterior</button>
+        <button type="button" class="btn btn-primary" id="next">Siguiente</button>
+        <a class="btn btn-primary btn-wa" id="send" href="#" target="_blank" rel="noopener" hidden>Enviar a Flor por WhatsApp</a>
+      </div>
+      <p class="fine center" id="sendNote" hidden>Se abre WhatsApp con el mensaje listo. Solo tenés que tocar enviar.</p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <a class="btn btn-outline-light" id="talkDirect" href="#" target="_blank" rel="noopener">Prefiero hablar directo con Flor</a>
+  <p><strong>Privacidad:</strong> tus datos se usan solo para cotizar tu plan. Esta página no los guarda: viajan directamente a mi WhatsApp cuando tocás enviar.</p>
+  <p>Florencia Blanco es asesora comercial de Prevención Salud (Grupo Sancor Seguros). Este sitio es de la asesora, no el sitio oficial de la empresa. Sitio oficial: <a href="https://www.prevencionsalud.com.ar" target="_blank" rel="noopener">prevencionsalud.com.ar</a></p>
+  <p><a href="https://www.instagram.com/flor_prevencionsalud/" target="_blank" rel="noopener">@flor_prevencionsalud</a></p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
