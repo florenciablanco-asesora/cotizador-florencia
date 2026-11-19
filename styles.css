@@ -14,8 +14,8 @@ main,.footer{max-width:640px;margin:0 auto}
 
 /* Encabezado */
 .topbar{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;background:#fff;border-bottom:1px solid #ECEEF0}
-.logo{height:28px;width:auto}
-.topbar-name{font-size:13px;color:var(--gris-texto);text-align:right}
+.logo{width:clamp(150px,48vw,252px);height:auto;flex-shrink:0}
+.topbar-name{font-size:13px;color:var(--gris-texto);text-align:right;white-space:nowrap}
 
 /* Portada */
 .hero{background:var(--ciruela);color:#fff;text-align:center;padding:32px 20px 28px}
